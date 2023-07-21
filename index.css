@@ -1,0 +1,139 @@
+body{
+    background-color:antiquewhite;
+    background-image: linear-gradient(to right,#bf00ff, #8000ff);
+    word-wrap: break-word;
+}
+
+header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 120px auto;
+    
+}
+
+.home div{
+    padding: 20px;
+    max-width: 300px;
+    position: relative;
+    background-color: bisque;
+    text-align: center;
+    
+
+}
+.homeDiv button{
+min-width: 150px;
+min-height: 100px;
+}
+
+
+
+.game{
+    border: solid black;
+    padding: 20px;
+    max-width: 300px;
+    position: relative;
+    background-color: bisque;
+    text-align: center;
+    margin:80px auto;
+    
+}
+.single{
+    display: none;
+}
+.series{
+    display: none;
+}
+    
+
+
+.fullBodyOutput{
+    min-height: 350px;
+    width: 50%;
+    background-color:#800080;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+    margin: 100px auto;
+    display:none;
+}
+
+
+#outputContainer{
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    min-height: 100px;
+    margin:0 auto;
+    font-weight: bolder;
+}
+
+#outputContainer div{
+    min-height:100px;
+}
+
+#outputContainer button{
+    width: 80px;
+    height: 40px;
+    margin: 20% 8% 0 8%;
+}
+
+#outputContainer .goHome{
+    
+    bottom: 0;
+    min-height:150px;
+    
+}
+
+#output-text{
+    height: 20%;
+}
+
+#output2{
+    
+    
+    text-align: center;
+}
+
+#output2 div{
+    
+    
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+ button{
+    min-width: 60px;
+    min-height: 30px;
+    transition: width , height , transform ;
+}
+
+button:hover{
+    transform: translate(5px, 10px)
+}
+
+@media only screen and (max-width: 500px) {
+    .fullBodyOutput {
+      width: 100%;
+      margin-left:0px;
+      margin-right: 0px;
+      
+    }
+   }

@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <script src="index.js" defer> </script>
+    <link rel="stylesheet" href="./index.css"> 
 </head>
 <body>
-    <script src="index.js"> </script>
+    <header>
+        <h2>Rock, Paper, Scissor</h2>
+    </header>
+
+    <div class="home">
+        <div class="homeDiv">
+            <button class="homeButton" value="single"> Play Single Game</button>
+        </div>
+        <div class="homeDiv">
+            <button class="homeButton" value="series">Play Series </button>
+        </div>
+    </div>
+    <!--for single game-->
+    <div class="game single">
+        <h2 style="margin-bottom: 30px;">play single match</h2>
+    <div class="userSelection singleGame">
+        <p style="margin-bottom: 5px;">chose one</p>
+        <div class="buttons">  
+            <div>    
+                <button id="one" class="option" value="0">Rock</button>
+            </div>
+            <div>
+             <button id="two" class="option" value="1">Scissor</button>
+            </div>
+            <div>
+            <button id="three" class="option" value="2">Paper</button>
+            </div>
+        
+        
+        </div> 
+    </div>
+    <div >
+        <h3 class="output2"></h3>
+    </div>
+    <div class="goHome">
+        <button class="goHomeButton">home</button>
+    </div>
+</div>
+<!--  for series-->
+    <div class="game series">
+    <div class="userSelection">
+        <p style="margin-bottom: 5px;">chose one</p>
+     <div class="buttons">  
+        <div>    
+            <button id="one" class="option" value="0">Rock</button>
+        </div>
+        <div>
+         <button id="two" class="option" value="1">Scissor</button>
+        </div>
+        <div>
+        <button id="three" class="option" value="2">Paper</button>
+        </div>
+    
+    
+    </div> 
+    </div>
+    <div id="output2">
+        <h3 class="output2"></h3>
+        <div id="userOutput">
+            <h3>YOU</h3>
+            <p>0</p>
+        </div>
+        <div id="computerOutput">
+            <h3>COMPUTER</h3>
+            <p>0</p>
+        </div>
+    <p>*whoever win 5 match first will be winner</p>
+    </div>
+           <button class="refresh">Refresh</button>
+           <button class="goHomeButton">home</button>
+    </div>
+
+    <div class="fullBodyOutput">
+        <div id="outputContainer">
+            <div ></div>
+        <div id="output-text">
+            
+        </div>
+        <div class="goHome">
+            <button class="goHomeButton">home</button>
+            <button class="playAgainButton">Play again</button>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
